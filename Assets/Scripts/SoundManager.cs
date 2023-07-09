@@ -15,6 +15,6 @@ public class SoundManager : MonoBehaviour
             soundGameObject = new GameObject("Sound");
             audioSource = soundGameObject.AddComponent<AudioSource>();
         }
-        audioSource.PlayOneShot(clips[(int)Random.Range(0, clips.Count - 1)]);
+        audioSource.PlayOneShot(clips[(int)Random.Range(0, clips.Count)]);
     }
 }
